@@ -228,5 +228,6 @@ $RECYCLE.BIN/
 
 # My Content files
 content/
+notes/
 
 # End of https://www.gitignore.io/api/node,macos,linux,windows,webstorm,visualstudiocode
