@@ -160,23 +160,24 @@ console.log(Student.courseName());
 
 // STEP 11
 // How do arrow functions affect constructor functions?
-//
+//arrow functions cannot be used as constructor functions
+
 Student.prototype.scope = function() {
   console.log(this);
 };
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scope());
+console.log(joe.scope());
 
 Student.prototype.scopeArrow = () => console.log(this);
 
 // TODO: Uncomment the following line of code to see the output in the browser console
-// console.log(joe.scopeArrow());
+console.log(joe.scopeArrow());
 
 // TODO: Write a COMMENT below to answer the following questions.
 // 1. What is "this" when joe.scope() is invoked?
-//
+// it is entering into the constructor Student and calling the corresponding "this" elements within it
 // 2. What is "this" when joe.scopeArrow() is invoked?
-//
+// it is invoking the entire window because "this" is not scoped, and therefore it returns ALL of this
 // 3. Explain why "this" is different when an arrow function is used.
-//
+// arrow functions DO NOT bind their own "this"; since it is lexical, so it has the same context as the arrow function in which it is called 
