@@ -75,7 +75,7 @@ function showList() {
   for (let i = 0; i < allProducts.length; i++) {
     const liEl = document.createElement('li');
     liEl.textContent = allProducts[i].name + ' has ' + allProducts[i].votes + ' votes in ' + allProducts[i].views + ' views';
-    //TODO: Come back and template literal this line
+    //TODO: Come back and template literal this line eg  `I am currently enrolled in ${course}`
     list.appendChild(liEl);
   }
 }
